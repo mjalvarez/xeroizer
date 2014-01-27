@@ -27,7 +27,11 @@ module Xeroizer
           end
           response.response_items.first # there is is only one
         end
-      
+
+        def get_raw_xml(options = {})
+          options[:cache_file] ? File.read(options[:cache_file]) : http_get(options)
+        end
+
         def api_controller_name
           "Reports/#{report_type}"
         end
