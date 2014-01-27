@@ -17,7 +17,7 @@ module Xeroizer
 
         EARNINGS_RATE_RATE_TYPE = {
           'FIXEDAMOUNT' => '',
-          'MULTIPLE' => 'Multiple of Employee’s Ordinary Earnings Rate: an earnings rate which is derived from an employee’s ordinary earnings rate',
+          'MULTIPLE' => "Multiple of Employee's Ordinary Earnings Rate: an earnings rate which is derived from an employee's ordinary earnings rate",
           'RATEPERUNIT' => 'An earnings rate allowing entry of a rate per unit'
         } unless defined?(EARNINGS_RATE_RATE_TYPE)
         EARNINGS_RATE_RATE_TYPES = EARNINGS_RATE_RATE_TYPE.keys.sort
